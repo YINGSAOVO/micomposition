@@ -17,3 +17,5 @@ Imports:
     dplyr,
     tidyr,
     rlang
+URL: https://github.com/YINGSAOVO/micomposition
+BugReports: https://github.com/YINGSAOVO/micomposition/issues
