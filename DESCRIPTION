@@ -14,10 +14,10 @@ Suggests:
     phyloseq
 Imports:
     ggplot2,
-    dplyr,
     tidyr,
-    rlang,
-    scales
+    scales,
+    stats,
+    rlang
 URL: https://github.com/YINGSAOVO/micomposition
 BugReports: https://github.com/YINGSAOVO/micomposition/issues
 Depends: 

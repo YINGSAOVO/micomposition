@@ -1,3 +1,5 @@
+#' @importFrom rlang .data
+utils::globalVariables(c("SampleID", "Abundance"))
 #' Stacked bar chart for microbiome composition
 #'
 #' @param data A list with elements `otu_table`, `tax_table`, and `sample_data`,
