@@ -16,6 +16,10 @@ Imports:
     ggplot2,
     dplyr,
     tidyr,
-    rlang
+    rlang,
+    scales
 URL: https://github.com/YINGSAOVO/micomposition
 BugReports: https://github.com/YINGSAOVO/micomposition/issues
+Depends: 
+    R (>= 3.5)
+LazyData: true
