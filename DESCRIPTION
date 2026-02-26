@@ -1,0 +1,19 @@
+Package: micomposition
+Title: Visualization Tools for Microbiome Composition Data
+Version: 0.1.0
+Authors@R: 
+    person("Axel", "Guo", , "377174147@qq.com", role = c("aut", "cre"))
+Description: A toolkit for visualizing microbiome composition data from 
+    16S rRNA amplicon sequencing or metagenomic studies. Supports stacked 
+    bar charts, treemaps, sunburst plots, and Voronoi diagrams.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests:
+    phyloseq
+Imports:
+    ggplot2,
+    dplyr,
+    tidyr,
+    rlang
