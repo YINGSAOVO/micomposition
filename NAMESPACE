@@ -2,6 +2,7 @@
 
 export(plot_bar_stack)
 export(plot_sunburst)
+export(plot_treemap)
 export(plot_voronoi_static)
 export(plot_voronoi_widget)
 importFrom(rlang,.data)
