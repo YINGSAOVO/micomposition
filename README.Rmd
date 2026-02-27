@@ -1,0 +1,94 @@
+---
+output: github_document
+---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "70%",
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+# micomposition
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+**micomposition** is an R package for visualizing microbiome composition
+data from 16S rRNA amplicon sequencing or metagenomic studies. It provides
+publication-ready plots with minimal code.
+
+## Installation
+```r
+# Install from GitHub
+# install.packages("remotes")
+remotes::install_github("YINGSAOVO/micomposition")
+```
+
+## Quick Start
+```{r load}
+library(micomposition)
+
+# Built-in demo dataset
+data(demo_data)
+str(demo_data, max.level = 1)
+```
+
+## Stacked Bar Chart
+```{r bar, fig.height=4}
+plot_bar_stack(demo_data, level = "Phylum")
+```
+
+## Sunburst Chart
+```{r sunburst, fig.height=5}
+plot_sunburst(demo_data, levels = c("Phylum", "Family"))
+```
+
+## Treemap
+```{r treemap, fig.height=5}
+plot_treemap(demo_data, level = "Family")
+```
+
+## Waffle Chart
+```{r waffle, fig.height=4}
+plot_waffle(demo_data, level = "Phylum")
+```
+
+## Radial Bar Chart
+```{r radial, fig.height=5}
+plot_radial_bar(demo_data, level = "Phylum")
+```
+
+## Ridge Plot
+```{r ridge, fig.height=6}
+plot_ridge(demo_data, level = "Family", group_by = "Group")
+```
+
+## Bubble Chart
+```{r bubble, fig.height=5}
+plot_voronoi_static(demo_data, level = "Family")
+```
+
+## Input Data Format
+
+All functions accept a named list with three elements:
+```r
+data <- list(
+  otu_table   = otu_rel,    # numeric matrix: samples × OTUs (relative abundance)
+  tax_table   = tax_df,     # data.frame: OTU × taxonomic ranks
+  sample_data = sample_df   # data.frame: sample metadata
+)
+```
+
+Supported input formats (coming soon): `phyloseq`, MetaPhlAn, Kraken/Bracken.
+
+## Citation
+
+If you use micomposition in your research, please cite:
+
+> Your Name (2025). micomposition: Visualization Tools for Microbiome
+> Composition Data. R package.
+> https://github.com/YINGSAOVO/micomposition
