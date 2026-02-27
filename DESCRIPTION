@@ -23,7 +23,8 @@ Imports:
     deldir,
     voronoiTreemap,
     packcircles,
-    treemapify
+    treemapify,
+    ggridges
 URL: https://github.com/YINGSAOVO/micomposition
 BugReports: https://github.com/YINGSAOVO/micomposition/issues
 Depends: 
