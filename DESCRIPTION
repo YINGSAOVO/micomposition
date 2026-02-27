@@ -17,7 +17,12 @@ Imports:
     tidyr,
     scales,
     stats,
-    rlang
+    rlang,
+    ggrepel,
+    ggforce,
+    deldir,
+    voronoiTreemap,
+    packcircles
 URL: https://github.com/YINGSAOVO/micomposition
 BugReports: https://github.com/YINGSAOVO/micomposition/issues
 Depends: 
